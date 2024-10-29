@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Lifetime Probability Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Satellite Lifetime Probability Simulator</h1>
+        <div class="halves">
+            <!-- Left Half: Part A -->
+            <div class="half" id="partA">
+                <h2>Part A: Probability of Satellite Still Alive After X Years</h2>
+                
+                <label for="lambda">Enter Parameter for Lambda:</label>
+                <input type="number" id="lambda" step="0.01" placeholder="Enter lambda (e.g., 0.4)" />
+                
+                <label for="yearsAlive">Enter years (X):</label>
+                <input type="number" id="yearsAlive" placeholder="Enter years (e.g., 3)" />
+                
+                <button onclick="calculateAlive()">Calculate Probability</button>
+                <p id="resultAlive"></p>
+            </div>
+
+            <!-- Vertical Divider -->
+            <div class="divider"></div>
+
+            <!-- Right Half: Part B -->
+            <div class="half" id="partB">
+                <h2>Part B: Probability of Satellite Dying Between A and B Years</h2>
+                
+                <label for="startYear">Enter start year (A):</label>
+                <input type="number" id="startYear" placeholder="Enter start year (e.g., 4)" />
+                
+                <label for="endYear">Enter end year (B):</label>
+                <input type="number" id="endYear" placeholder="Enter end year (e.g., 5)" />
+                
+                <button onclick="calculateDeath()">Calculate Probability</button>
+                <p id="resultDeath"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

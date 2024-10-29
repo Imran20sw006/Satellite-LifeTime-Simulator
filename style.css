@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid black;
+}
+
+/* Header Styles */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Split Screen Layout */
+.halves {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.half {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.divider {
+    width: 8px; /* Bold divider width */
+    background-color: #34495e; /* Darker line color */
+    height: auto;
+    margin: 0 20px; /* Adds space around the divider */
+}
+
+/* Half Section Styling */
+h2 {
+    color: #2980b9;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    border: 2px solid black;
+}
+
+input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Result Paragraph Styling */
+p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #16a085;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .halves {
+        flex-direction: column;
+    }
+
+    .half {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
